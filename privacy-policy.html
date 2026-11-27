@@ -1,1 +1,1394 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Privacy Policy | ICT MCQ Master</title>
+
+<meta name="description" content="Privacy Policy for ICT MCQ Master, an educational app for children.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --primary: #635bdb;
+    --primary-dark: #5148c7;
+    --primary-light: #eeedff;
+    --text: #20243a;
+    --muted: #687086;
+    --border: #e9eaf2;
+    --background: #f6f7fc;
+    --white: #ffffff;
+    --green: #16875d;
+    --shadow: 0 8px 30px rgba(36,40,90,.055);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+body {
+    font-family: 'Inter','Hind Siliguri',sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
+
+a:hover { text-decoration: underline; }
+
+/* Header */
+
+.header {
+    background: white;
+    border-bottom: 1px solid var(--border);
+    padding: 18px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-inner {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand-icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 14px;
+    background: linear-gradient(135deg,#7168ed,#a18bff);
+    display: grid;
+    place-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.brand-name {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.brand-subtitle {
+    font-size: 11px;
+    color: var(--muted);
+}
+
+.header-badge {
+    background: #edfbf4;
+    color: var(--green);
+    padding: 7px 14px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Hero */
+
+.hero {
+    background: linear-gradient(125deg,#5752cf,#8275ed 60%,#a18bf4);
+    color: white;
+    padding: 75px 24px 85px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before,
+.hero::after {
+    content: "";
+    position: absolute;
+    border: 1px solid rgba(255,255,255,.15);
+    border-radius: 50%;
+}
+
+.hero::before {
+    width: 350px;
+    height: 350px;
+    top: -200px;
+    left: -80px;
+}
+
+.hero::after {
+    width: 400px;
+    height: 400px;
+    bottom: -280px;
+    right: -100px;
+}
+
+.hero-content {
+    max-width: 760px;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-label {
+    display: inline-block;
+    padding: 6px 15px;
+    border: 1px solid rgba(255,255,255,.3);
+    background: rgba(255,255,255,.12);
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: .5px;
+}
+
+.hero h1 {
+    font-size: clamp(30px,5vw,46px);
+    line-height: 1.3;
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+
+.hero p {
+    color: rgba(255,255,255,.85);
+    font-size: 15px;
+    max-width: 590px;
+    margin: auto;
+}
+
+.hero-meta {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.hero-meta span {
+    background: rgba(255,255,255,.15);
+    padding: 7px 15px;
+    border-radius: 30px;
+    font-size: 12px;
+}
+
+/* Layout */
+
+.container {
+    max-width: 1200px;
+    margin: -35px auto 70px;
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: 265px minmax(0,1fr);
+    gap: 25px;
+    position: relative;
+    z-index: 2;
+    align-items: start;
+}
+
+/* Sidebar */
+
+.sidebar {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 22px 15px;
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 100px;
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+}
+
+.sidebar-title {
+    font-size: 12px;
+    color: var(--muted);
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 0 12px;
+    margin-bottom: 14px;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.sidebar nav a {
+    color: #60677d;
+    padding: 9px 12px;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: .2s;
+}
+
+.sidebar nav a:hover,
+.sidebar nav a.active {
+    background: var(--primary-light);
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.sidebar nav a.active { font-weight: 700; }
+
+.sidebar-note {
+    margin-top: 20px;
+    padding: 14px;
+    background: #f6f7ff;
+    border-radius: 10px;
+    font-size: 11px;
+    color: var(--muted);
+}
+
+/* Content */
+
+.content { min-width: 0; }
+
+.intro-card,
+.policy-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px 30px;
+    box-shadow: var(--shadow);
+    margin-bottom: 18px;
+    scroll-margin-top: 100px;
+}
+
+.intro-card { border-top: 4px solid var(--primary); }
+
+.intro-card h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.intro-card p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.policy-card h2 {
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 17px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    line-height: 1.5;
+}
+
+.section-number {
+    width: 34px;
+    height: 34px;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    background: var(--primary-light);
+    color: var(--primary);
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.policy-card h3 {
+    font-size: 15px;
+    margin: 22px 0 9px;
+    color: #30354b;
+}
+
+.policy-card p {
+    color: #626a7d;
+    margin-bottom: 13px;
+    font-size: 13.5px;
+}
+
+.policy-card ul {
+    padding-left: 22px;
+    margin: 12px 0 16px;
+    color: #626a7d;
+}
+
+.policy-card li {
+    padding: 3px 0;
+    font-size: 13.5px;
+}
+
+.policy-card li::marker { color: var(--primary); }
+
+.policy-card strong { color: #30354b; }
+
+.highlight {
+    background: #f3f2ff;
+    border-left: 3px solid var(--primary);
+    padding: 15px 18px;
+    border-radius: 0 9px 9px 0;
+    margin: 16px 0;
+    color: #55518e;
+    font-size: 13px;
+}
+
+.warning {
+    background: #fff8e9;
+    border-left: 3px solid #e8a23a;
+    padding: 15px 18px;
+    border-radius: 0 9px 9px 0;
+    margin: 16px 0;
+    color: #805e29;
+    font-size: 13px;
+}
+
+/* Data Sharing Card */
+
+.data-card {
+    border: 1px solid #e3e0ff;
+    border-radius: 13px;
+    overflow: hidden;
+    margin: 18px 0;
+    background: #fff;
+}
+
+.data-card-header {
+    background: linear-gradient(110deg,#f0efff,#f8f7ff);
+    padding: 17px 20px;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    border-bottom: 1px solid #e8e5ff;
+}
+
+.data-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    background: #e4e1ff;
+    display: grid;
+    place-items: center;
+    color: #635bdb;
+    font-size: 21px;
+    flex-shrink: 0;
+}
+
+.data-card-header h3 {
+    margin: 0;
+    font-size: 14px;
+    color: #30354b;
+}
+
+.data-card-header p {
+    margin: 2px 0 0;
+    font-size: 11px;
+    color: #77758e;
+}
+
+.data-details { padding: 5px 20px; }
+
+.data-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 13px 0;
+    border-bottom: 1px solid #f0eff6;
+    font-size: 12.5px;
+}
+
+.data-row:last-child { border-bottom: none; }
+
+.data-label {
+    color: #777e90;
+    font-weight: 500;
+}
+
+.data-value {
+    color: #30354b;
+    font-weight: 600;
+    text-align: right;
+}
+
+.purpose-tag {
+    display: inline-block;
+    padding: 5px 11px;
+    border-radius: 30px;
+    background: #eeedff;
+    color: #5b52c8;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.data-note {
+    background: #f8f8fc;
+    padding: 13px 17px;
+    font-size: 11px;
+    color: #737b8d;
+    border-top: 1px solid #eeeef5;
+    line-height: 1.7;
+}
+
+/* Links */
+
+.link-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.link-item {
+    background: #f8f8fc;
+    border: 1px solid var(--border);
+    padding: 12px 15px;
+    border-radius: 9px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.link-item strong { font-size: 12px; }
+
+.link-item a { word-break: break-all; }
+
+/* Contact */
+
+.contact-card {
+    background: linear-gradient(130deg,#f1f0ff,#faf9ff);
+    border: 1px solid #e4e1ff;
+    border-radius: 13px;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+.contact-card p { margin: 5px 0; }
+
+.contact-card a { font-weight: 600; }
+
+/* Footer */
+
+.footer {
+    text-align: center;
+    padding: 35px 20px;
+    background: white;
+    border-top: 1px solid var(--border);
+}
+
+.footer p {
+    font-size: 12px;
+    color: var(--muted);
+    margin: 5px 0;
+}
+
+.footer strong { color: var(--text); }
+
+/* Responsive */
+
+@media(max-width:850px) {
+    .container {
+        grid-template-columns: 1fr;
+        margin-top: -25px;
+        gap: 18px;
+    }
+
+    .sidebar {
+        position: relative;
+        top: 0;
+        max-height: none;
+    }
+
+    .sidebar nav {
+        display: grid;
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+
+    .sidebar-note { display: none; }
+}
+
+@media(max-width:600px) {
+    body { font-size: 14px; }
+
+    .header { padding: 13px 0; }
+
+    .header-inner { padding: 0 16px; }
+
+    .brand-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .brand-name { font-size: 13px; }
+
+    .header-badge {
+        font-size: 10px;
+        padding: 6px 10px;
+    }
+
+    .hero { padding: 55px 18px 65px; }
+
+    .hero p { font-size: 13px; }
+
+    .container { padding: 0 13px; }
+
+    .intro-card,
+    .policy-card {
+        padding: 21px 18px;
+        border-radius: 13px;
+    }
+
+    .policy-card h2 {
+        font-size: 16px;
+        gap: 9px;
+    }
+
+    .policy-card h3 { font-size: 14px; }
+
+    .policy-card p,
+    .policy-card li { font-size: 13px; }
+
+    .sidebar { padding: 17px 12px; }
+
+    .sidebar nav { grid-template-columns: 1fr; }
+
+    .sidebar nav a { padding: 7px 10px; }
+
+    .data-card-header { padding: 14px; }
+
+    .data-details { padding: 5px 14px; }
+
+    .data-row {
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    .data-value { text-align: left; }
+}
+</style>
+</head>
+
+<body>
+
+<header class="header">
+    <div class="header-inner">
+        <div class="brand">
+            <div class="brand-icon">অ</div>
+            <div>
+                <div class="brand-name">ICT MCQ Master</div>
+                <div class="brand-subtitle">Educational Learning App</div>
+            </div>
+        </div>
+        <div class="header-badge">● Privacy Protected</div>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <div class="hero-label">LEGAL & PRIVACY</div>
+        <h1>Privacy Policy</h1>
+        <p>
+            Your privacy matters to us. Learn how our educational
+            application handles information and protects the privacy
+            of children, parents and guardians.
+        </p>
+        <div class="hero-meta">
+            <span>App: ICT MCQ Master</span>
+            <span>Last Updated: November 1, 2026</span>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+
+<aside class="sidebar">
+    <div class="sidebar-title">On This Page</div>
+    <nav id="toc">
+        <a href="#section-1">01. Introduction</a>
+        <a href="#section-2">02. Information We Collect</a>
+        <a href="#section-3">03. Children's Privacy & COPPA</a>
+        <a href="#section-4">04. Google AdMob</a>
+        <a href="#section-5">05. Child-Directed Advertising</a>
+        <a href="#section-6">06. Google UMP</a>
+        <a href="#section-7">07. GDPR Rights</a>
+        <a href="#section-8">08. US State Privacy Rights</a>
+        <a href="#section-9">09. Third-Party Services</a>
+        <a href="#section-10">10. Cookies & Identifiers</a>
+        <a href="#section-11">11. Data Sharing</a>
+        <a href="#section-12">12. Data Security</a>
+        <a href="#section-13">13. Data Retention</a>
+        <a href="#section-14">14. Parents & Guardians</a>
+        <a href="#section-15">15. Policy Changes</a>
+        <a href="#section-16">16. Contact Us</a>
+    </nav>
+    <div class="sidebar-note">
+        We are committed to providing a safe and enjoyable
+        learning experience for children and families.
+    </div>
+</aside>
+
+<main class="content">
+
+<div class="intro-card">
+    <h2>Welcome to Our Privacy Policy</h2>
+    <p>
+        This Privacy Policy explains how
+        <strong>বর্ণমালা ও সংখ্যা পরিচয়</strong>
+        handles information when you use our educational mobile
+        application. Please read this policy carefully to understand
+        our privacy practices.
+    </p>
+</div>
+
+<!-- SECTION 1 -->
+
+<section class="policy-card" id="section-1">
+<h2><span class="section-number">01</span> Introduction</h2>
+
+<p>Welcome to <strong>“বর্ণমালা ও সংখ্যা পরিচয়”</strong> (“the App”).</p>
+
+<p>
+The App is an educational mobile application designed primarily
+for children to learn Bengali letters, numbers, basic concepts,
+and other educational content in a simple, safe, and enjoyable way.
+</p>
+
+<p>
+We respect the privacy of children, parents, guardians, and all
+users. Protecting children's privacy is an important part of how
+we design and operate this App.
+</p>
+
+<p>
+This Privacy Policy explains what information may be processed
+when you use the App, how third-party advertising services work,
+and what privacy choices may be available to users and parents.
+</p>
+
+<div class="highlight">
+<strong>Our Commitment:</strong> The developer does not directly
+collect or maintain a database of users' personal information
+through the App's educational features. However, certain
+third-party services, particularly Google Mobile Ads (AdMob),
+may process limited technical and advertising-related information
+as described below.
+</div>
+
+<p>
+By using the App, you acknowledge this Privacy Policy.
+Where applicable law requires parental consent or another legal
+basis, this statement does not replace that requirement.
+</p>
+</section>
+
+<!-- SECTION 2 -->
+
+<section class="policy-card" id="section-2">
+<h2><span class="section-number">02</span> Information We Collect</h2>
+
+<h3>2.1 Information We Do Not Directly Collect</h3>
+
+<p>
+The App does not require users to register, create an account,
+or provide personal information to access its main educational features.
+</p>
+
+<p>We do not directly ask children or other users to provide:</p>
+
+<ul>
+<li>Full name</li>
+<li>Home or postal address</li>
+<li>Phone number</li>
+<li>Email address</li>
+<li>Passwords or account credentials</li>
+<li>Contacts or contact lists</li>
+<li>Photos or videos</li>
+<li>Precise GPS location</li>
+<li>Financial or payment information</li>
+<li>Government identification numbers</li>
+</ul>
+
+<div class="highlight">
+We do not operate a user registration system or a
+personal-information database for the App's educational functionality.
+</div>
+
+<h3>2.2 Information That May Be Processed by Third-Party Services</h3>
+
+<p>
+Although we do not directly collect personal information from
+children, the App integrates <strong>Google Mobile Ads SDK
+(Google AdMob)</strong> to display advertisements.
+</p>
+
+<p>
+When advertisements are requested, displayed, or measured,
+Google and its services may automatically process certain
+technical and advertising-related information, depending on
+the user's device, settings, region, and applicable advertising policies.
+</p>
+
+<p>This information may include:</p>
+
+<ul>
+<li>Device information and technical characteristics</li>
+<li>App information and version</li>
+<li>IP address</li>
+<li><strong>Device or other IDs, including advertising-related identifiers where permitted</strong></li>
+<li>Advertising request and interaction information</li>
+<li>Approximate location inferred from an IP address</li>
+<li>Diagnostic, performance, fraud-prevention, and security information</li>
+</ul>
+
+<p>
+<strong>Purpose of processing:</strong> Device or other IDs may be
+used by Google AdMob for advertising and marketing-related purposes,
+including delivering advertisements, measuring advertising
+performance, and providing related advertising services, subject
+to applicable child-directed advertising restrictions and user settings.
+</p>
+
+<p>
+These activities are performed by the relevant third-party service
+under its own privacy policies and applicable requirements.
+</p>
+
+<div class="highlight">
+We do not independently collect or store this advertising-related
+information in our own user database. However, we cannot claim
+that no information is processed by third-party SDKs.
+</div>
+</section>
+
+<!-- SECTION 3 -->
+
+<section class="policy-card" id="section-3">
+<h2><span class="section-number">03</span> Children's Privacy and COPPA</h2>
+
+<p>
+The App is primarily designed for children and families,
+including children under the age of 13.
+</p>
+
+<p>
+We take children's privacy seriously and aim to follow applicable
+children's privacy laws and platform requirements, including:
+</p>
+
+<ul>
+<li>The United States Children's Online Privacy Protection Act (COPPA) and the COPPA Rule.</li>
+<li>Google Play Families Policy.</li>
+<li>Applicable child-directed advertising requirements.</li>
+<li>Other applicable children's privacy and data-protection laws.</li>
+</ul>
+
+<h3>Our Children's Privacy Practices</h3>
+
+<ul>
+<li>We do not knowingly ask children to submit personal information.</li>
+<li>We do not require children to create accounts.</li>
+<li>We do not provide user profiles or social networking features.</li>
+<li>We do not knowingly collect children's precise location.</li>
+<li>We do not intentionally use children's information for behavioral advertising or remarketing.</li>
+<li>We configure Google Mobile Ads requests for child-directed treatment, as applicable.</li>
+<li>We aim to ensure that advertisements shown to children are appropriate for their intended age group.</li>
+</ul>
+
+<h3>Parental Rights</h3>
+
+<p>
+Parents and legal guardians may contact us if they have questions
+or concerns about children's privacy or believe that a child
+has provided personal information directly to us.
+</p>
+
+<p>
+Where applicable law gives parents rights to review, request deletion
+of, or object to the processing of a child's personal information,
+we will review such requests and take appropriate action as required by law.
+</p>
+
+<div class="warning">
+<strong>Important:</strong> If a third-party service processes
+information through the App, its collection and processing
+practices are also governed by that service's privacy policies
+and applicable legal requirements.
+</div>
+
+<p>
+For more information about COPPA, please visit:
+<a href="https://www.ftc.gov/business-guidance/privacy-security/childrens-privacy"
+target="_blank" rel="noopener noreferrer">FTC Children's Privacy</a>.
+</p>
+</section>
+
+<!-- SECTION 4 -->
+
+<section class="policy-card" id="section-4">
+<h2><span class="section-number">04</span> Google Mobile Ads (AdMob)</h2>
+
+<p>
+The App uses <strong>Google Mobile Ads SDK (Google AdMob)</strong>
+to display advertisements.
+</p>
+
+<p>Google LLC provides Google AdMob advertising services.</p>
+
+<p>We may use AdMob to:</p>
+
+<ul>
+<li>Display advertisements within the App.</li>
+<li>Measure advertising performance.</li>
+<li>Prevent invalid advertising activity and fraud.</li>
+<li>Maintain advertising security and functionality.</li>
+</ul>
+
+<p>
+When an ad request is made, Google may process certain device,
+app, network, and advertising-related information as described
+in Section 2.2.
+</p>
+
+<p>
+Google's processing of this information is governed by Google's
+own privacy policies and advertising terms.
+</p>
+
+<div class="link-list">
+<div class="link-item">
+<strong>Google Privacy Policy</strong>
+<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a>
+</div>
+
+<div class="link-item">
+<strong>Google AdMob Help Center</strong>
+<a href="https://support.google.com/admob/" target="_blank" rel="noopener noreferrer">https://support.google.com/admob/</a>
+</div>
+
+<div class="link-item">
+<strong>Google Mobile Ads SDK Documentation</strong>
+<a href="https://developers.google.com/admob" target="_blank" rel="noopener noreferrer">https://developers.google.com/admob</a>
+</div>
+</div>
+</section>
+
+<!-- SECTION 5 -->
+
+<section class="policy-card" id="section-5">
+<h2><span class="section-number">05</span> Child-Directed Advertising and Advertising Restrictions</h2>
+
+<p>
+Because the App is primarily intended for children,
+we take additional precautions regarding advertising.
+</p>
+
+<p>
+Our Google Mobile Ads implementation is configured to apply
+child-directed advertising treatment, including:
+</p>
+
+<ul>
+<li>Child age-restricted advertising treatment.</li>
+<li>A maximum ad content rating of <strong>G (General Audiences)</strong>.</li>
+<li>Restrictions intended to prevent personalized advertising and remarketing for child-directed ad requests.</li>
+<li>Advertising safeguards provided by Google's child-directed advertising systems.</li>
+</ul>
+
+<p>
+We do not intentionally serve personalized or interest-based
+advertisements to children.
+</p>
+
+<p>
+We also aim to follow Google Play Families advertising requirements,
+including requirements concerning age-appropriate ad content
+and advertising formats.
+</p>
+
+<div class="warning">
+We do not guarantee that every advertisement will be suitable
+in every circumstance. Advertising content and availability
+may depend on Google's systems, advertiser inventory, regional
+requirements, and applicable policies. We encourage parents
+and guardians to contact us if they encounter an advertisement
+that appears inappropriate for children.
+</div>
+</section>
+
+<!-- SECTION 6 -->
+
+<section class="policy-card" id="section-6">
+<h2><span class="section-number">06</span> Google UMP and Privacy Choices</h2>
+
+<p>
+The App may use Google's <strong>User Messaging Platform (UMP) SDK</strong>
+to manage applicable privacy and consent-related requirements.
+</p>
+
+<p>
+Depending on the user's location, applicable laws, and Google's
+privacy message configuration, UMP may determine whether a
+privacy message or privacy options interface is required.
+</p>
+
+<p>
+Available privacy choices may include controls related to applicable
+European privacy requirements or certain United States state privacy requirements.
+</p>
+
+<p>
+The App may display a <strong>Privacy Choices</strong> button
+when Google UMP indicates that a privacy options interface is required.
+</p>
+
+<p>
+The availability of a privacy message or privacy options interface
+may vary according to the user's region, age-related treatment,
+and applicable requirements.
+</p>
+
+<p>
+For additional information:
+<a href="https://developers.google.com/admob/flutter/privacy"
+target="_blank" rel="noopener noreferrer">Google UMP Documentation</a>.
+</p>
+</section>
+
+<!-- SECTION 7 -->
+
+<section class="policy-card" id="section-7">
+<h2><span class="section-number">07</span> European Privacy Rights (GDPR)</h2>
+
+<p>
+For users in the European Economic Area (EEA), the United Kingdom,
+and other applicable jurisdictions, data protection laws such
+as the General Data Protection Regulation (GDPR) may provide
+certain privacy rights.
+</p>
+
+<p>
+Depending on the circumstances and applicable law, these rights may include:
+</p>
+
+<ul>
+<li>The right to request access to personal information.</li>
+<li>The right to request correction of inaccurate information.</li>
+<li>The right to request deletion of personal information.</li>
+<li>The right to restrict or object to certain processing.</li>
+<li>The right to withdraw consent where processing is based on consent.</li>
+<li>The right to lodge a complaint with an appropriate data protection authority.</li>
+</ul>
+
+<p>
+The App is primarily designed for children. We configure
+advertising requests for child-directed treatment and use
+Google's privacy tools as applicable.
+</p>
+
+<div class="highlight">
+This Privacy Policy does not replace any consent, parental
+authorization, or other legal requirement that may apply
+to a particular user or processing activity.
+</div>
+
+<p>Users and parents may contact us regarding privacy-related requests.</p>
+</section>
+
+<!-- SECTION 8 -->
+
+<section class="policy-card" id="section-8">
+<h2><span class="section-number">08</span> United States State Privacy Rights</h2>
+
+<p>
+Certain United States states provide residents with privacy
+rights under applicable state privacy laws.
+</p>
+
+<p>Depending on the relevant law and circumstances, these rights may include:</p>
+
+<ul>
+<li>The right to know or access certain personal information.</li>
+<li>The right to request deletion of certain personal information.</li>
+<li>The right to correct inaccurate personal information.</li>
+<li>The right to opt out of certain targeted advertising or other regulated processing.</li>
+<li>Other rights provided by applicable state privacy laws.</li>
+</ul>
+
+<p>
+The App does not directly maintain a user personal-information
+database. However, third-party advertising services may process
+information as described in this Policy.
+</p>
+
+<p>
+Where applicable, privacy choices may be made through Google's
+privacy tools or other mechanisms provided by the relevant service.
+</p>
+
+<p>
+<a href="https://policies.google.com/privacy"
+target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.
+</p>
+</section>
+
+<!-- SECTION 9 -->
+
+<section class="policy-card" id="section-9">
+<h2><span class="section-number">09</span> Third-Party Services</h2>
+
+<p>
+The App currently integrates Google Mobile Ads SDK (AdMob) for advertising.
+</p>
+
+<p>
+We do not currently integrate Meta Audience Network,
+AppLovin MAX, or other third-party advertising mediation networks.
+</p>
+
+<p>
+Google may process information according to its own policies
+and applicable requirements.
+</p>
+
+<p>We encourage users and parents to review:</p>
+
+<div class="link-list">
+<div class="link-item">
+<strong>Google Privacy Policy</strong>
+<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>
+</div>
+
+<div class="link-item">
+<strong>Google AdMob</strong>
+<a href="https://support.google.com/admob/" target="_blank" rel="noopener noreferrer">Google AdMob Help Center</a>
+</div>
+
+<div class="link-item">
+<strong>Google Play Families Policy</strong>
+<a href="https://support.google.com/googleplay/android-developer/answer/9893335"
+target="_blank" rel="noopener noreferrer">Google Play Families Policy</a>
+</div>
+</div>
+
+<p>
+If we add additional third-party services in the future,
+we will review their data practices and update this Privacy
+Policy where appropriate.
+</p>
+</section>
+
+<!-- SECTION 10 -->
+
+<section class="policy-card" id="section-10">
+<h2><span class="section-number">10</span> Cookies, Advertising Identifiers, and Similar Technologies</h2>
+
+<p>
+The App does not independently operate a website-style
+cookie tracking system to identify children.
+</p>
+
+<p>
+However, Google Mobile Ads SDK and related advertising services
+may use or process advertising identifiers, device identifiers,
+cookies, or similar technologies where permitted and necessary
+for their services.
+</p>
+
+<p>
+Such processing is subject to applicable advertising settings,
+child-directed treatment, platform restrictions, and Google's
+privacy policies.
+</p>
+</section>
+
+<!-- SECTION 11 UPDATED -->
+
+<section class="policy-card" id="section-11">
+<h2><span class="section-number">11</span> Data Sharing and Disclosure</h2>
+
+<p>
+We do not sell users' personal information. We do not independently
+share or disclose children's personal information for our own
+commercial purposes.
+</p>
+
+<p>
+However, the App integrates Google Mobile Ads SDK (AdMob).
+When providing advertising services, Google may receive and
+process certain technical and advertising-related information,
+including device or other IDs, as described in this Policy.
+</p>
+
+<h3>Data Shared and Purpose</h3>
+
+<p>
+The following table explains the advertising-related data
+that may be shared with Google AdMob and the purposes for which
+it may be processed.
+</p>
+
+<div class="data-card">
+
+    <div class="data-card-header">
+        <div class="data-icon">⌘</div>
+        <div>
+            <h3>Advertising Data Sharing</h3>
+            <p>Third-party advertising service · Google AdMob</p>
+        </div>
+    </div>
+
+    <div class="data-details">
+
+        <div class="data-row">
+            <span class="data-label">Data Category</span>
+            <span class="data-value">Device or other IDs</span>
+        </div>
+
+        <div class="data-row">
+            <span class="data-label">Shared With</span>
+            <span class="data-value">Google Mobile Ads (AdMob)</span>
+        </div>
+
+        <div class="data-row">
+            <span class="data-label">Purpose of Sharing</span>
+            <span class="data-value">
+                <span class="purpose-tag">Advertising or marketing</span>
+            </span>
+        </div>
+
+        <div class="data-row">
+            <span class="data-label">Related Activities</span>
+            <span class="data-value">
+                Ad delivery, ad measurement and advertising services
+            </span>
+        </div>
+
+    </div>
+
+    <div class="data-note">
+        Device or other IDs may be processed by Google AdMob
+        for advertising and marketing-related purposes, subject
+        to applicable child-directed advertising restrictions,
+        platform settings, and Google's policies.
+    </div>
+
+</div>
+
+<p>
+We do not independently collect or maintain these advertising
+identifiers in our own user database. However, Google may
+process them through its advertising SDK and services.
+</p>
+
+<p>
+Information may also be disclosed where required by applicable
+law, legal process, fraud prevention, security obligations,
+or the protection of users and our legal rights.
+</p>
+
+<div class="warning">
+<strong>Children's Privacy:</strong> Although device or other
+IDs may be processed for advertising or marketing-related
+purposes, we configure advertising requests for child-directed
+treatment as applicable. We do not intentionally use children's
+information for personalized behavioral advertising or remarketing.
+</div>
+
+</section>
+
+<!-- SECTION 12 -->
+
+<section class="policy-card" id="section-12">
+<h2><span class="section-number">12</span> Data Security</h2>
+
+<p>
+We take reasonable steps to protect the App and the information
+under our control.
+</p>
+
+<p>
+The App does not maintain a personal-information database
+for its educational features.
+</p>
+
+<p>
+However, no electronic system, internet transmission, or
+third-party service can be guaranteed to be completely secure.
+</p>
+
+<p>
+Information processed by Google is subject to Google's
+own security practices and policies.
+</p>
+</section>
+
+<!-- SECTION 13 -->
+
+<section class="policy-card" id="section-13">
+<h2><span class="section-number">13</span> Data Retention and Deletion</h2>
+
+<p>
+We do not maintain user accounts or intentionally store
+personal information collected directly from children.
+</p>
+
+<p>
+Information processed by Google Mobile Ads or other third-party
+services may be retained according to their respective
+retention policies, settings, and applicable legal requirements.
+</p>
+
+<p>
+Requests relating to information processed by Google may need
+to be directed to Google through its privacy and account controls.
+</p>
+
+<p>
+<a href="https://policies.google.com/privacy"
+target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.
+</p>
+</section>
+
+<!-- SECTION 14 -->
+
+<section class="policy-card" id="section-14">
+<h2><span class="section-number">14</span> Parents and Guardians</h2>
+
+<p>
+We encourage parents and guardians to supervise children's
+use of mobile applications and online services.
+</p>
+
+<p>
+If you believe that your child has provided personal information
+directly to us, or if you have a question about this Privacy Policy,
+please contact us.
+</p>
+
+<p>
+We will review privacy-related requests and take appropriate
+steps as required by applicable law.
+</p>
+</section>
+
+<!-- SECTION 15 -->
+
+<section class="policy-card" id="section-15">
+<h2><span class="section-number">15</span> Changes to This Privacy Policy</h2>
+
+<p>
+We may update this Privacy Policy from time to time to reflect changes in:
+</p>
+
+<ul>
+<li>App features and functionality.</li>
+<li>Google Mobile Ads SDK or other third-party services.</li>
+<li>Advertising and privacy practices.</li>
+<li>Applicable laws and regulations.</li>
+<li>Google Play Developer and Families policies.</li>
+</ul>
+
+<p>
+Any updated version will be published on this page with
+a revised <strong>Last Updated</strong> date.
+</p>
+
+<p>
+We encourage parents, guardians, and users to review
+this page periodically.
+</p>
+</section>
+
+<!-- SECTION 16 -->
+
+<section class="policy-card" id="section-16">
+<h2><span class="section-number">16</span> Contact Us</h2>
+
+<p>
+If you have questions, concerns, or requests regarding
+this Privacy Policy, children's privacy, or the App,
+please contact us:
+</p>
+
+<div class="contact-card">
+<p>
+<strong>App Name:</strong>
+বর্ণমালা ও সংখ্যা পরিচয়
+</p>
+
+<p>
+<strong>Developer Contact Email:</strong>
+<a href="mailto:mshaharina1997@gmail.com">
+mshaharina1997@gmail.com
+</a>
+</p>
+
+<p>
+<strong>Privacy Policy:</strong>
+<a href="https://raselsiu.github.io/privacy-policy/">
+https://raselsiu.github.io/privacy-policy/
+</a>
+</p>
+</div>
+
+<p style="margin-top:16px;">
+We will review privacy-related inquiries and respond as appropriate.
+</p>
+</section>
+
+</main>
+</div>
+
+<footer class="footer">
+<p><strong>বর্ণমালা ও সংখ্যা পরিচয়</strong></p>
+<p>Designed with care for children and families.</p>
+<p>© 2026 All Rights Reserved.</p>
+</footer>
+
+<script>
+const sections = document.querySelectorAll('.policy-card');
+const navLinks = document.querySelectorAll('#toc a');
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+
+                if (
+                    link.getAttribute('href') ===
+                    '#' + entry.target.id
+                ) {
+                    link.classList.add('active');
+                }
+            });
+        }
+    });
+}, {
+    rootMargin: '-100px 0px -65% 0px'
+});
+
+sections.forEach(section => observer.observe(section));
+</script>
+
+</body>
+</html>
